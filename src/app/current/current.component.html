@@ -1,0 +1,32 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <div class="input-group justify-content-center">
+    <input type="text" class="border border-success" ngModel name="city" placeholder="Name of the city">
+    <!--<input [(ngModel)]="city" [typeahead]="cityName" class="form-control">-->
+    <div class="input-group-append">
+      <button type="button" name="button" class="btn btn-sm btn-outline-success">Go</button>
+    </div>
+  </div>
+</form>
+
+<div class="container text-center" style="margin-top: 20px;">
+<div class="card" style="background-color: #e3f2fd;">
+<div class="row">
+  <div class="col-md-3" style="margin: auto; padding: auto;"><h2> {{ myWeather.cityName }}</h2> <h4> (Lat: {{myWeather.lat}}, Lon: {{myWeather.lon}})</h4></div>
+
+  <div class="col-md-3">
+    <div class="img" style="padding: 10px;">
+      <img src="../../assets/{{myWeather.icon}}.png">
+    </div>
+  </div>
+
+  <div class="col-md-3 d-flex align-items-center" style="font-size: 2rem;">
+   {{ myWeather.weatherKind }}
+  </div>
+
+  <div class="col-md-3"  style="font-size: 1.5rem; margin: auto; padding: auto;">
+    <div>Temperature: {{ myWeather.temp }}&deg;F</div>
+    <div>Max: {{ myWeather.tempMax }}&deg;F,<br/> Min: {{ myWeather.tempMin }}&deg;F</div>
+  </div>
+</div>
+</div>
+</div>

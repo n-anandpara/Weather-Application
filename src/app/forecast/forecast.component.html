@@ -1,0 +1,75 @@
+<form [formGroup]="forecastForm" (ngSubmit)="onSubmit()">
+  <div class="input-group justify-content-center">
+    <input type="text" class="border border-success" formControlName="forecastCity" placeholder="Name of the city">
+        <div class="input-group-append">
+      <button type="button" name="button" class="btn btn-sm btn-outline-success">Go</button>
+    </div>
+  </div>
+</form>
+
+
+<!--<canvas #myCanvas width="500" height="300"></canvas>-->
+
+<div>
+    <canvas #myCanvas>{{ chart }}</canvas>
+</div>
+
+<!--<div class="container" style="margin-top: 20px;">
+  <div class="row text-center">
+
+    <div class="col-md-3 day">
+      <h3>Date</h3>
+      <div class="icon">
+        <img src="../../assets/01d.png" alt="Weather">
+      </div>
+      <div class="row temp">
+        <h4 class="col-6">Max</h4>
+        <h4>Min</h4>
+      </div>
+    </div>
+
+    <div class="col-md-2 day">
+      <h3>Date</h3>
+      <div class="icon">
+        <img src="../../assets/01d.png" alt="Weather">
+      </div>
+      <div class="row temp">
+        <h4 class="col-6">Max</h4>
+        <h4>Min</h4>
+      </div>
+    </div>
+
+    <div class="col-md-2 day">
+      <h3>Date</h3>
+      <div class="icon">
+        <img src="../../assets/01d.png" alt="Weather">
+      </div>
+      <div class="row temp">
+        <h4 class="col-6">Max</h4>
+        <h4>Min</h4>
+      </div>
+    </div>
+
+    <div class="col-md-2 day">
+      <h3>Date</h3>
+      <div class="icon">
+        <img src="../../assets/01d.png" alt="Weather">
+      </div>
+      <div class="row temp">
+        <h4 class="col-6">Max</h4>
+        <h4>Min</h4>
+      </div>
+    </div>
+
+    <div class="col-md-3 day">
+      <h3>Date</h3>
+      <div class="icon">
+        <img src="../../assets/01d.png" alt="Weather">
+      </div>
+      <div class="row temp">
+        <h4 class="col-6">Max</h4>
+        <h4>Min</h4>
+      </div>
+    </div>
+  </div>
+</div>-->
